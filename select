@@ -1,0 +1,19 @@
+select = seç 
+from = -den
+* = hepsini seçer
+SELECT * FROM tablo_adı 
+
+<------ örnek ---->  
+
+- SELECT * FROM customers 
+
+customers tablasounda ki kayıtlı verilerin hepsini getir.
+
+
+- SELECT sütun_adı FROM tablo_adı
+
+<------ örnek ------->
+
+SELECT customerName FROM customers
+
+customers tablosunda ki 
