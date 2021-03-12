@@ -1,19 +1,65 @@
-select = seç 
-from = -den
+SELECT = seç 
+FROM = -den
+AS = olarak
+DISTINC = farklı 
 * = hepsini seçer
+
 SELECT * FROM tablo_adı 
 
 <------ örnek ---->  
 
-- SELECT * FROM customers 
+-> SELECT * FROM customers 
 
 customers tablasounda ki kayıtlı verilerin hepsini getir.
 
 
-- SELECT sütun_adı FROM tablo_adı
+-> SELECT sütun_adı FROM tablo_adı
 
 <------ örnek ------->
 
 SELECT customerName FROM customers
 
-customers tablosunda ki 
+customers tablosunda ki customerName tablosunda ki bilgileri getirir.
+
+-> SELECT sütun_adı,diğer_sütun_adı, …. FROM tablo_adı
+türkçe olarak aktarımı -> Oluşturulan tablodan istediğimiz sütün adlarını girererek o sütun adlarının bilgilerini gösterir.
+ <------- örnek ------>
+ SELECT customerName,contactFirstName,contactLastName FROM `customers`
+ türkçe olarak aktarımı -> customers tablosundaki customerName,contactFirstName,contactLastName sütün adlarının bilgierlini seçer ve gösterir. 
+
+-> AS FROM KOMUTU
+SELECT sütun_adı AS ‘tablo sütun adı’ FROM tablo_adı         * sütun_adı=veri tabanında tablo oluştururken verilen isim  *tablo sütun adı = en başta sütun adı koyduğumuz yeri hangi isim ile görmek istediğimiz kısım
+                                                                 *tablo_adı = en başta veritabınını kuararken tabloya verdiğimiz isin
+ <------ örnek -------->                                                                
+                                                                 
+SELECT customerName AS KULLANICIADLARI FROM customers
+türkçe olarak aktarımı -> customers veritabanından tablo adı customerName olan bilgileri seç (SELECT) tablo adını customerName yerine KULLANICIADLARI olarak(AS) göster.
+
+-> SELECT DISTINC
+SELECT DISTINCT sutun_adi FROM tablo_adi 
+türkçe olarak aktarımı -> sütün adındaki bilgieri aynı olanları gösterme sadece farklıları göster.
+
+ <------ örnek ------>
+SELECT DISTINCT postalCode FROM customers
+türkçe olarak aktarımı -> customers tablosundan postalCode sütunununda ki farklı girilmiş bilgileri seç 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
