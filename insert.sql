@@ -9,4 +9,4 @@ VALUES(10426,'2021-03-11','2121-03-13','NULL','In Process','',103) --> İstenen 
  INSERT INTO orders
  (orderNumber,  orderDate,requiredDate,status,customerNumber)
  VALUES
- (
+ (10427,'2021-03-13','2021-03-14',NULL,'In Process',NULL,112)
