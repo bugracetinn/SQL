@@ -43,13 +43,34 @@ türkçe olarak aktarımı -> sütün adındaki bilgieri aynı olanları göster
 SELECT DISTINCT postalCode FROM customers
 türkçe olarak aktarımı -> customers tablosundan postalCode sütunununda ki farklı girilmiş bilgileri seç 
 
+-> SELECT COUNT(*)
+COUNT(*) komutu ile kayıt sayısı listelenir.
+SELECT COUNT(*) FROM tablo_adi
 
+<------- örnek ---------->
+ 
+ SELECT COUNT(*) FROM customers
+ türkçe olarak aktarımı -> customers tablosunda ki kayıtları seçer ve kaç tane kayıt olduğunu gösterir 
 
+-> SELECT ...WHERE
+WHERE komutu filtreleme için kullanılır.
+SELECT sütun_adi FROM tablo_adi WHERE sütun_adi= 'xxx'
 
+<------- örnek --------->
 
+SELECT * FROM customers WHERE postalCode = '44000'
+türkçe olarak aktarımı -> posta kodu 44000 olan kullanıcıları customers tablosundan seçer ve gösterir.
 
+= yerine başka kullanma modelleri de vardır;
+>,<,>=,<=,<>,BETWEEN,LIKE,IN gibi kullanımları da mevcuttur.
 
+-> SELECT ... WHERE... AND/OR/NOT 
+SELECT sütun_adi FROM tablo_adi WHERE sütun_adi= 'xxx' AND/OR/NOT sütun_adi='xxx'
 
+<-------- örnek --------->
+
+SELECT * FROM customers WHERE postalCode= '4400' AND credilimit > 100000
+türkçe olarak aktarımı -> credilimit sütunundan kredi limiti 1000.000'den büyük ve posta kodu 4400 olam costumers tablosunda ki kullanıcıları seçer ve gösterir.
 
 
 
