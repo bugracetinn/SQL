@@ -72,9 +72,13 @@ SELECT sütun_adi FROM tablo_adi WHERE sütun_adi= 'xxx' AND/OR/NOT sütun_adi='
 SELECT * FROM customers WHERE postalCode= '4400' AND credilimit > 100000
 -- türkçe olarak aktarımı -> credilimit sütunundan kredi limiti 1000.000'den büyük ve posta kodu 4400 olam costumers tablosunda ki kullanıcıları seçer ve gösterir.
 
+-- -> SELECT MAX KOMUTU
+SELECT MAX(sütun_adi) FROM tablo_adi LIMIT 1 -- Şeklinde yazılır
+--MAX en yüksek olanı getirir.
+--LIMIT ise kaçtane veri satırı getirilceği yazılır.
 
-
-
+-- <------ örnek --->
+SELECT MAX(orderNumber) FROM orders LIMIT 1 
 
 
 
