@@ -1,6 +1,6 @@
-WHERE -> nerede? anlamına gelir SQL dilinde de filtreleme amacı ile kullanılır.
+-- WHERE -> nerede? anlamına gelir SQL dilinde de filtreleme amacı ile kullanılır.
 
-SELECT sütun_adi,sütun_adi FROM tablo_adi WHERE status = 'xxx' -> şeklinde yazılabilir.
+SELECT sütun_adi,sütun_adi FROM tablo_adi WHERE status = 'xxx' -- -> şeklinde yazılabilir.
 
 -- <----- örnek ---->
 
