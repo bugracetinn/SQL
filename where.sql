@@ -28,3 +28,20 @@ SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedD
 -- - Büyük'ten Küçüğ!e sıralar.
 -- <----- örnek ------>
 SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedDate BETWEEN '2003-05-01' AND '2003-05-31'  ORDER BY shippedDate DESC
+
+-- -> IS NULL / IS NOT NULL
+-- Boş ve boş olmayan 
+-- <------ örnek ---->
+SELECT * FROM orders WHERE status = 'SHIPPED' AND comments IS NULL 
+-- > comments(yorumlar) sütunu null(boş) olan ve status(durum) sütunu SHIPPED(kargolanmış) olan verieri orders(siparişler) tablosunun hepsini(*) seç ve göster.
+
+-- <------ örnek ---->
+SELECT * FROM orders WHERE status = 'SHIPPED' AND comments IS NOT NULL
+-- > comments(yorumlar) sütunu null(boş) olmayan ve status(durum) sütunu SHIPPED(kargolanmış) olan verieri orders(siparişler) tablosunun hepsini(*) seç ve göster.
+
+
+
+
+
+
+
