@@ -14,7 +14,7 @@ SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedD
 -- * AND = && şeklinde de yazılır.
 -- * OR = || şeklinde de yazılır.
 
--> BETWEEN KOMUTU
+-- -> BETWEEN KOMUTU
 BETWEEN = Arasında anlamına gelir.
 -- <----- örnek ------->
 SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedDate >= '2003-05-01' AND shippedDate <= '2003-05-31'-> Şeklinde de bir sorgu yazılabilir.
@@ -22,9 +22,9 @@ SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedD
 
 -- -> ORDER BY KOMUTU
 -- - Küçük'ten büyüğ'e sıralar.
-<----- örnek ------>
+-- <----- örnek ------>
 SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedDate BETWEEN '2003-05-01' AND '2003-05-31'  ORDER BY shippedDate
--> ORDER BY DESC KOMUTU
+-- -> ORDER BY DESC KOMUTU
 -- - Büyük'ten Küçüğ!e sıralar.
 -- <----- örnek ------>
 SELECT orderNumber,shippedDate FROM orders WHERE status = 'Shipped' AND shippedDate BETWEEN '2003-05-01' AND '2003-05-31'  ORDER BY shippedDate DESC
