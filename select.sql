@@ -79,10 +79,13 @@ SELECT MAX(sütun_adi) FROM tablo_adi LIMIT 1 -- Şeklinde yazılır
 
 -- <------ örnek --->
 SELECT MAX(orderNumber) FROM orders LIMIT 1 -- sipariş numarası en büyük olanı seç = son verilen sipariş numarası
+
 yada 
 
 SELECT * FROM orders
 WHERE orderNumber = (SELECT MAX(orderNumber) FROM orders LIMIT 1) -- Şeklinde yazılabilir bu sorguda son verilen sipariş numarasının tüm satır bilgilerini gösterir 
+yada 
+SELECT orderNumber FROM orders ORDER BY orderNumber DESC LIMIT 1 -- Yine son sipariş numarasını getirir ama metod olarak orderNumber sütuınu büyükten küçüğe sıralar ama limmit 1 dendiği için 1 tane veri getirir oda en büyüğü olur.
 
 
 
