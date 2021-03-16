@@ -1,4 +1,4 @@
--- INSERT -> Ekle INTO -> İçime yani içine ekle anlamına gelir.
+-- INSERT -> Ekle  INTO -> İçine  yani içine ekle anlamına gelir.
 
 INSERT INTO tablo_adi VALUES(deger_1,deger_2,deger_3...) -- Şeklinde yazılır.
 -- <--- örnek --->
