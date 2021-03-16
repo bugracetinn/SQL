@@ -6,14 +6,13 @@ WHERE sütun_adi='güncellemek istediğiniz değere sahip satır' -- -> Bu kıs�
 şeklinde yazılabilir.
 
 -- <--- örnek ---->
-
 UPDATE orders
 SET shippedDate = '2021-03-11',status='Shipped',comments='yazmak istediğiniz yorum'
 WHERE orderNumber = 10426
--- <---- örnek --->
 
+-- <---- örnek --->
 UPDATE customers
---veritabanında satış danışmanının satış yaptığı kodunu güncellemek bu sorgu ile yapılır.
+-- Veritabanında satış danışmanının satış yaptığı kodunu güncellemek bu sorgu ile yapılır.
 
 SET salesRepEmloyeeNumber=1401
 WHERE salesRepEmloyeeNumber=14611 
