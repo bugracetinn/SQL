@@ -13,6 +13,5 @@ WHERE orderNumber = 10426
 -- <---- örnek --->
 UPDATE customers
 -- Veritabanında satış danışmanının satış yaptığı kodunu güncellemek bu sorgu ile yapılır.
-
 SET salesRepEmloyeeNumber=1401
 WHERE salesRepEmloyeeNumber=14611 
